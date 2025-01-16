@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harjutus02</title>
+    <meta name="keywords" content="HTML,CSS,HTML5,CSS3" />
+    <meta name="author" content="Stever Heinsaar" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <h1><strong>Vormide loomine</strong></h1>
+    <form id="myform">
+        <table>
+            <tr>
+                <td style="padding-right: 60px; padding-bottom: 5px;"><label for="username">Kasutajanimi:</label></td>
+                <td><input type="text" id="username" name="username" maxlength="6" placeholder="max pikkus 6"></td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 5px"><label for="course">Kursus:</label></td>
+                <td><input type="text" id="course" name="course" maxlength="3" placeholder="max pikkus 3"></td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 5px"><label>Osakonna number: </label>
+                <td><input type="number" value="1" min="1" max="10" step="1"></td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 5px"><label for="password">Parool:</label></td>
+                <td><input type="password" id="password" name="password" ></td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 5px"><label for="teenus">Vali teenus:</label>
+                <td><select id="teenus" name="teenus">
+                    <option value="Odav">Odav 0,59€</option>
+                    <option value="Keskmine">Keskmine 2,49€</option>
+                    <option value="Kallis">Kallis 4,99€</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td style="padding-top: 10px; padding-bottom: 5px"><label for="roll">Roll:</label>
+                <td style="padding-top: 10px; padding-bottom: 10px;"><input type="radio" id="roll" name="roll" value="admin">Admin<br>
+                    <input type="radio" id="roll" name="roll" value="moderaator">Moderaator<br>
+                    <input type="radio" id="roll" name="roll" value="user">User</td> <br>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 5px"><label for="tingimused">Nõustun tingimustega:</label>
+                <td><input type="checkbox" id="tingimused" name="tingimused" value="true"></td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 5px"><label for="tutvustus">Enesetutvustus</label>
+                <td><textarea id="tutvustus" name="tutvustus" rows="10" cols="20"></textarea></td>
+            </tr>
+            <tr>
+                <td style="padding-top: 10px"><button type="empty" onclick="emptyFields">Tühjenda väljad</button></td>
+                <td style="padding-top: 10px"><button type="submit">Saada</button></td>
+            <tr>
+        </table>
+    </form>
+
+    <script>
+        function emptyFields() {
+            document.getElementById("myform").reset();
+        } 
+    </script>
+
+</body>
+</html>
