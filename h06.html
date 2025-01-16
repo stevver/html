@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harjutus02</title>
+    <title>Harjutus06</title>
     <meta name="keywords" content="HTML,CSS,HTML5,CSS3" />
     <meta name="author" content="Stever Heinsaar" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -42,8 +42,8 @@
             <tr>
                 <td style="padding-top: 10px; padding-bottom: 5px"><label for="roll">Roll:</label>
                 <td style="padding-top: 10px; padding-bottom: 10px;"><input type="radio" id="roll" name="roll" value="admin">Admin<br>
-                    <input type="radio" id="roll" name="roll" value="moderaator">Moderaator<br>
-                    <input type="radio" id="roll" name="roll" value="user">User</td> <br>
+                    <input type="radio" id="roll1" name="roll" value="moderaator">Moderaator<br>
+                    <input type="radio" id="roll2" name="roll" value="user">User</td>
             </tr>
             <tr>
                 <td style="padding-bottom: 5px"><label for="tingimused">Nõustun tingimustega:</label>
@@ -54,9 +54,9 @@
                 <td><textarea id="tutvustus" name="tutvustus" rows="10" cols="20"></textarea></td>
             </tr>
             <tr>
-                <td style="padding-top: 10px"><button type="empty" onclick="emptyFields">Tühjenda väljad</button></td>
+                <td style="padding-top: 10px"><button type="button" onclick="emptyFields()">Tühjenda väljad</button></td>
                 <td style="padding-top: 10px"><button type="submit">Saada</button></td>
-            <tr>
+            </tr>
         </table>
     </form>
 
