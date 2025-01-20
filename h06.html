@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harjutus06</title>
-    <meta name="keywords" content="HTML,CSS,HTML5,CSS3" />
+    <meta name="keywords" content="HTML,HTML5" />
     <meta name="author" content="Stever Heinsaar" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -16,23 +16,23 @@
     <form id="myform">
         <table>
             <tr>
-                <td style="padding-right: 60px; padding-bottom: 5px;"><label for="username">Kasutajanimi:</label></td>
+                <td><label for="username">Kasutajanimi:</label></td>
                 <td><input type="text" id="username" name="username" maxlength="6" placeholder="max pikkus 6"></td>
             </tr>
             <tr>
-                <td style="padding-bottom: 5px"><label for="course">Kursus:</label></td>
+                <td><label for="course">Kursus:</label></td>
                 <td><input type="text" id="course" name="course" maxlength="3" placeholder="max pikkus 3"></td>
             </tr>
             <tr>
-                <td style="padding-bottom: 5px"><label>Osakonna number: </label>
+                <td><label>Osakonna number: </label></td>
                 <td><input type="number" value="1" min="1" max="10" step="1"></td>
             </tr>
             <tr>
-                <td style="padding-bottom: 5px"><label for="password">Parool:</label></td>
-                <td><input type="password" id="password" name="password" ></td>
+                <td><label for="password">Parool:</label></td>
+                <td><input type="password" id="password" name="password"></td>
             </tr>
             <tr>
-                <td style="padding-bottom: 5px"><label for="teenus">Vali teenus:</label>
+                <td><label for="teenus">Vali teenus:</label></td>
                 <td><select id="teenus" name="teenus">
                     <option value="Odav">Odav 0,59€</option>
                     <option value="Keskmine">Keskmine 2,49€</option>
@@ -40,22 +40,24 @@
                 </select></td>
             </tr>
             <tr>
-                <td style="padding-top: 10px; padding-bottom: 5px"><label for="roll">Roll:</label>
-                <td style="padding-top: 10px; padding-bottom: 10px;"><input type="radio" id="roll" name="roll" value="admin">Admin<br>
+                <td><label for="roll">Roll:</label></td>
+                <td>
+                    <input type="radio" id="roll" name="roll" value="admin">Admin<br>
                     <input type="radio" id="roll1" name="roll" value="moderaator">Moderaator<br>
-                    <input type="radio" id="roll2" name="roll" value="user">User</td>
+                    <input type="radio" id="roll2" name="roll" value="user">User
+                </td>
             </tr>
             <tr>
-                <td style="padding-bottom: 5px"><label for="tingimused">Nõustun tingimustega:</label>
+                <td><label for="tingimused">Nõustun tingimustega:</label></td>
                 <td><input type="checkbox" id="tingimused" name="tingimused" value="true"></td>
             </tr>
             <tr>
-                <td style="padding-bottom: 5px"><label for="tutvustus">Enesetutvustus</label>
+                <td><label for="tutvustus">Enesetutvustus</label></td>
                 <td><textarea id="tutvustus" name="tutvustus" rows="10" cols="20"></textarea></td>
             </tr>
             <tr>
-                <td style="padding-top: 10px"><button type="button" onclick="emptyFields()">Tühjenda väljad</button></td>
-                <td style="padding-top: 10px"><button type="submit">Saada</button></td>
+                <td><button type="button" onclick="emptyFields()">Tühjenda väljad</button></td>
+                <td><button type="submit">Saada</button></td>
             </tr>
         </table>
     </form>
