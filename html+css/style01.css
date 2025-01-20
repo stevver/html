@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Background color for the empty space */
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the content */
+}
+
+.header {
+    background-color:dimgray; /* Dark gray background for the "MyName" section */
+    color: #fff;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the header */
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.nav {
+    background-color: #000; /* Black background for the navigation links */
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the navigation */
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+.nav ul li {
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the container */
+    background-color:#fff; /* White background for the container */
+}
+
+.content-section {
+    background-color: #fff; /* White background for the content sections */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer.footer {
+    background-color: #000; /* Black background for the footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the footer */
+}
