@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #dbdbdb;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner {
+    background-image: url('cool-background.png');
+    background-size: cover;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    height: 580px;
+    position: relative;
+}
+
+.banner h1 {
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.banner .slogan {
+    font-size: 1.1rem;
+}
+
+.banner nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.banner nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.banner nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.content {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.content h2 {
+    font-size: 2rem;
+    color: black;
+}
+
+.content p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: white;
+}
+
+.image-row .item {
+    text-align: center;
+}
+
+.image-row .item img {
+    width: 250px;
+    height: 250px;
+}
+
+.image-row .item h3 {
+    font-size: 1.3rem;
+    color: rgb(71, 71, 139);
+}
+
+.image-row .item h5 {
+    text-align: center;
+    font-size: 13px;
+    color: rgb(110, 110, 110);
+}
+
+.image-row .item p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: rgb(39, 64, 131);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: white;
+    font-size: 17px;
+    height: 40px;
+}
